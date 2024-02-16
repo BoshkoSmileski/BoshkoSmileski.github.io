@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexFuel Store</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-header">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                <img src="img/logo3.png" width="150px">
+                </a>
+            </div>
+            <nav>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a>Shop</a>
+                        <div class="content">
+                            <a href="suplements.html">Suplements</a>
+                            <a href="gymwear.html">Gym Wear</a>
+                            <a href="gymequipment.html">Gym Equipment</a>
+                        </div>
+                    </li>
+                    <li><a href="reviews.html">Reviews</li>
+                    <li><a href="survey.html">Survey</li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Log in</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="reviewsheader">
+        <h1>Customer Reviews</h1>
+    </div>
+    
+
+    <div class="product-shop">
+
+        <div class="product">
+            <img src="img/wheyprotein.png" alt="Whey">
+            <div class="product-info">
+                <h2>Whey Protein Powder</h2>
+            </div>
+            <div class="likecomment">
+                <input type="text" id="comment-wheyprotein" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-wheyprotein">Likes: 0</span>
+                <br>
+                <button onclick="addComment('wheyprotein')">Add Comment</button>
+                <button onclick="likeProduct('wheyprotein')">Like</button>
+            </div>
+            <div id="comments-wheyprotein" class="comments">Comments↓</div>  
+        </div>
+
+        <div class="product">
+            <img src="img/creatine.jpg" alt="Creatine">
+            <div class="product-info">
+                <h2>Creatine Monohydrate</h2>
+            </div>
+            <div class="likecomment">
+                <input type="text" id="comment-creatine" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-creatine">Likes: 0</span>
+                <br>
+                <button onclick="addComment('creatine')">Add Comment</button>
+                <button onclick="likeProduct('creatine')">Like</button>
+            </div>
+            <div id="comments-creatine" class="comments">Comments↓</div>
+        </div>
+
+        <div class="product">
+            <img src="img/preworkout2.png" alt="Preworkout">
+            <div class="product-info">
+                <h2>Pre Workout</h2>
+            </div>
+            <div class="likecomment">
+                <input type="text" id="comment-preworkout" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-preworkout">Likes: 0</span>
+                <br>
+                <button onclick="addComment('preworkout')">Add Comment</button>
+                <button onclick="likeProduct('preworkout')">Like</button>
+            </div>
+            <div id="comments-preworkout" class="comments">Comments↓</div>
+        </div>
+
+        <div class="product">
+            <img src="img/bcaa.png" alt="Bcaa">
+            <div class="product-info">
+                <h2>BCAA</h2>
+            </div>
+            <div class="likecomment">
+                <input type="text" id="comment-bcaa" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-bcaa">Likes: 0</span>
+                <br>
+                <button onclick="addComment('bcaa')">Add Comment</button>
+                <button onclick="likeProduct('bcaa')">Like</button>
+            </div>
+            <div id="comments-bcaa" class="comments">Comments↓</div>
+        </div>
+
+        <div class="product">
+            <img src="img/omega3.jpg" alt="Omega3">
+            <div class="product-info">
+                <h2>Omega 3</h2>
+            </div>
+            <div class="likecomment">
+                <input type="text" id="comment-omega3" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-omega3">Likes: 0</span>
+                <br>
+                <button onclick="addComment('omega3')">Add Comment</button>
+                <button onclick="likeProduct('omega3')">Like</button>
+            </div>
+            <div id="comments-omega3" class="comments">Comments↓</div>
+        </div>
+
+        <div class="product">
+            <img src="img/multivitamin.jpg" alt="Multivitamin">
+            <div class="product-info">
+                <h2>Multivitamin</h2>
+            </div>
+            <div class="likecomment">
+                <input type="text" id="comment-multivitamin" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-multivitamin">Likes: 0</span>
+                <br>
+                <button onclick="addComment('multivitamin')">Add Comment</button>
+                <button onclick="likeProduct('multivitamin')">Like</button>
+            </div>
+            <div id="comments-multivitamin" class="comments">Comments↓</div>
+        </div>
+
+        <div class="product">
+            <img src="img/proteinshaker.jpg" alt="proteinshaker">
+            <div class="product-info">
+                <h2>Protein Shaker</h2>
+            </div>
+            <div class="likecomment">
+                <input type="text" id="comment-proteinshaker" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-proteinshaker">Likes: 0</span>
+                <br>
+                <button onclick="addComment('proteinshaker')">Add Comment</button>
+                <button onclick="likeProduct('proteinshaker')">Like</button>
+            </div>
+            <div id="comments-proteinshaker" class="comments">Comments↓</div>
+        </div>
+
+        <div class="product">
+            <img src="img/jumpinrope.jpg" alt="jumpingrope">
+            <div class="product-info">
+                <h2>Jumping Rope</h2>
+            </div>
+            <div class="likecomment">
+                <input type="text" id="comment-jumpingrope" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-jumpingrope">Likes: 0</span>
+                <br>
+                <button onclick="addComment('jumpingrope')">Add Comment</button>
+                <button onclick="likeProduct('jumpingrope')">Like</button>
+            </div>
+            <div id="comments-jumpingrope" class="comments">Comments↓</div>
+        </div>
+
+        <div class="product">
+            <img src="img/liftingbelt.jpg" alt="liftingbelt">
+            <div class="product-info">
+                <h2>Weight Lifting Belt</h2>
+            </div>
+            <div class="likecomment">
+                <input type="text" id="comment-liftingbelt" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-liftingbelt">Likes: 0</span>
+                <br>
+                <button onclick="addComment('liftingbelt')">Add Comment</button>
+                <button onclick="likeProduct('liftingbelt')">Like</button>
+            </div>
+            <div id="comments-liftingbelt" class="comments">Comments↓</div>
+        </div>
+
+        <div class="product">
+            <img src="img/liftingstraps.jpg" alt="liftingstraps">
+            <div class="product-info">
+                <h2>Lifting Straps</h2>
+            </div>
+            <div class="likecomment">
+                <input type="text" id="comment-liftingstraps" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-liftingstraps">Likes: 0</span>
+                <br>
+                <button onclick="addComment('liftingstraps')">Add Comment</button>
+                <button onclick="likeProduct('liftingstraps')">Like</button>
+            </div>
+            <div id="comments-liftingstraps" class="comments">Comments↓</div>
+        </div>
+
+        <div class="product">
+            <img src="img/pullupbar.png" alt="pullupbar">
+            <div class="product-info">
+                <h2>Multi-Grip Pull-Up Bar</h2>
+            </div>
+            <div class="likecomment">
+                <input type="text" id="comment-pullupbar" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-pullupbar">Likes: 0</span>
+                <br>
+                <button onclick="addComment('pullupbar')">Add Comment</button>
+                <button onclick="likeProduct('pullupbar')">Like</button>
+            </div>
+            <div id="comments-pullupbar" class="comments">Comments↓</div>
+        </div>
+
+        <div class="product">
+            <img src="img/liquidchalk.jpg" alt="liquidchalk">
+            <div class="product-info">
+                <h2>Liquid Chalk</h2>
+            </div>
+            <div class="likecomment">
+                <input type="text" id="comment-liquidchalk" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-liquidchalk">Likes: 0</span>
+                <br>
+                <button onclick="addComment('liquidchalk')">Add Comment</button>
+                <button onclick="likeProduct('liquidchalk')">Like</button>
+            </div>
+            <div id="comments-liquidchalk" class="comments">Comments↓</div>
+        </div>
+
+        <div class="product">
+            <img src="img/longsleeveshir.png" alt="Longsleeveshir">
+            <div class="product-info">
+                <h2>WORKOUT READY COMPRESSION LONG SLEEVE SHIRT</h2>
+            </div>
+            <div class="likecomment">
+                <input type="text" id="comment-longsleeve" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-longsleeve">Likes: 0</span>
+                <br>
+                <button onclick="addComment('longsleeve')">Add Comment</button>
+                <button onclick="likeProduct('longsleeve')">Like</button>
+            </div>
+            <div id="comments-longsleeve" class="comments">Comments↓</div>
+        </div>
+
+        <div class="product">
+            <img src="img/compressiontshirt.png" alt="compressiontshirt">
+            <div class="product-info">
+                <h2>WORKOUT READY COMPRESSION T-SHIRT</h2>
+            </div>
+            <div class="likecomment">
+                <input type="text" id="comment-compressionshirt" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-compressionshirt">Likes: 0</span>
+                <br>
+                <button onclick="addComment('compressionshirt')">Add Comment</button>
+                <button onclick="likeProduct('compressionshirt')">Like</button>
+            </div>
+            <div id="comments-compressionshirt" class="comments">Comments↓</div>
+        </div>
+
+        <div class="product">
+            <img src="img/reebokjogger.png" alt="reebokjogger">
+            <div class="product-info">
+                <h2>REEBOK RI FT BL JOGGER</h2>
+            </div>
+            <div class="likecomment">
+                <input type="text" id="comment-reebokjogger" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-reebokjogger">Likes: 0</span>
+                <br>
+                <button onclick="addComment('reebokjogger')">Add Comment</button>
+                <button onclick="likeProduct('reebokjogger')">Like</button>
+            </div>
+            <div id="comments-reebokjogger" class="comments">Comments↓</div>
+        </div>
+
+        <div class="product">
+            <img src="img/supermanshirt.png" alt="supermanshirt">
+            <div class="product-info">
+                <h2>HERO CORE T-SHIRT, SUPERMAN LOGO SPLAT</h2>
+            </div>
+            <div class="likecomment">
+                <input type="text" id="comment-supermanshirt" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-supermanshirt">Likes: 0</span>
+                <br>
+                <button onclick="addComment('supermanshirt')">Add Comment</button>
+                <button onclick="likeProduct('supermanshirt')">Like</button>
+            </div>
+            <div id="comments-supermanshirt" class="comments">Comments↓</div>
+        </div>
+
+        <div class="product">
+            <img src="img/dufflebag.png" alt="dufflebag">
+            <div class="product-info">
+                <h2>UA UNDENIABLE 4.0 SMALL DUFFLE BAG, GRAPHITE/BLACK</h2>
+            </div>
+            <div class="likecomment">
+                <input type="text" id="comment-dufflebag" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-dufflebag">Likes: 0</span>
+                <br>
+                <button onclick="addComment('dufflebag')">Add Comment</button>
+                <button onclick="likeProduct('dufflebag')">Like</button>
+            </div>
+            <div id="comments-dufflebag" class="comments">Comments↓</div>
+        </div>
+
+        <div class="product">
+            <img src="img/cap.png" alt="uacap">
+            <div class="product-info">
+                <h2>UA BLITZING 3.0 CAP HEATHERED, STEEL/STEEL</h2>
+            </div>
+            <div class="likecomment">
+                <input type="text" id="comment-uacap" placeholder="Add a comment">
+                <br>
+                <span id="likeCounter-uacap">Likes: 0</span>
+                <br>
+                <button onclick="addComment('uacap')">Add Comment</button>
+                <button onclick="likeProduct('uacap')">Like</button>
+            </div>
+            <div id="comments-uacap" class="comments">Comments↓</div>
+        </div>
+
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2023 FlexFuel Store. All rights reserved.</p>
+        </div>
+
+        <script src="jquery.js"></script>
+</body>
+
+</html>

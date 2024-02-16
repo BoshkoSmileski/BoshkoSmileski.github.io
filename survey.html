@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexFuel Store</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-header">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                <img src="img/logo3.png" width="150px">
+                </a>
+            </div>
+            <nav>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a>Shop</a>
+                        <div class="content">
+                            <a href="suplements.html">Suplements</a>
+                            <a href="gymwear.html">Gym Wear</a>
+                            <a href="gymequipment.html">Gym Equipment</a>
+                        </div>
+                    </li>
+                    <li><a href="reviews.html">Reviews</li>
+                    <li><a href="survey.html">Survey</li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Log in</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    
+
+    <form id="sodrzhina" >
+
+        <div class="naslov">
+            <h1>Customer Satisfaction Survey</h1>
+        </div>
+        
+        <h2>Name</h2><br><br>
+        <input type="name" id="name" name="name" placeholder="Enter your name" class="box"><br>
+
+        <h2>Age</h2><br><br>
+        <input type="number" id="age" name="age" placeholder="Enter your age" class="box"><br>
+        
+        <h2>Gender</h2><br><br>
+        <div class="gender">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <br><br>
+        <h2>Fitness Level</h2><br><br>
+        <div class="FitnessLevel">
+            <input type="radio" id="beginner" name="fitnesslevel" value="beginner">
+            <label for="beginner">Beginner</label>
+            <input type="radio" id="intermediate" name="fitnesslevel" value="intermediate">
+            <label for="intermediate">Intermediate</label>
+            <input type="radio" id="advanced" name="fitnesslevel" value="advanced">
+            <label for="advanced">Advanced</label>
+        </div>
+        <br><br>
+        <h2>How often do you workout in a week?</h2><br><br>
+        <div class="workout">
+            <input type="radio" id="1-2" name="workout" value="1-2">
+            <label for="1-2">1-2 times</label>
+            <input type="radio" id="3-4" name="workout" value="3-4">
+            <label for="3-4">3-4 times</label>
+            <input type="radio" id="5-6" name="workout" value="5-6">
+            <label for="5-6">5-6 times</label>
+            <input type="radio" id="7" name="workout" value="7">
+            <label for="7">7 times</label>
+        </div>
+        <br><br>
+        <h2>Would you recommend our products to a friend?</h2><br><br>
+        <div class="recommend">
+            <input type="radio" id="yes" name="recommend" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="recommend" value="no">
+            <label for="no">No</label>
+        </div>
+        <br><br>
+        <h2>Sugestions for improvement</h2><br><br>
+        <input type="text" id="improvement" name="improvement" class="box" placeholder="Sugestions for improvement">
+        <br><br>
+        <h2>Likelihood to return</h2><br><br>
+        <input type="number" id="return" name="return" min="1" max="10" class="box" placeholder="Likelihood">
+        <br><br>
+        <h2>Aditional comments</h2><br><br>
+        <input type="text" id="aditional" name="aditional" class="box" placeholder="Aditional comments">
+        <br><br>
+        <h2>Thank you for your time! If you'd like to stay updated on future discounts and promotions,
+             please subscribe to our newsletter by entering your email below.
+        </h2><br><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" class="box">
+
+        <button class="submit-survey" type="submit"><h3>Submit</h3></button>
+
+        
+    </form>
+
+
+    <div class="footer">
+        <p>&copy; 2023 FlexFuel Store. All rights reserved.</p>
+    </div>
+
+    <script src="jquery.js"></script>
+</body>
+
+</html>

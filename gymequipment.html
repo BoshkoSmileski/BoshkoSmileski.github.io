@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexFuel Store</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-header">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                <img src="img/logo3.png" width="150px">
+                </a>
+            </div>
+            <nav>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a>Shop</a>
+                        <div class="content">
+                            <a href="suplements.html">Suplements</a>
+                            <a href="gymwear.html">Gym Wear</a>
+                            <a href="gymequipment.html">Gym Equipment</a>
+
+                        </div>
+                    </li>
+                    <li><a href="reviews.html">Reviews</li>
+                    <li><a href="survey.html">Survey</li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Log in</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="product-shop">
+        <div class="product">
+            <img src="img/proteinshaker.jpg" alt="Whey">
+            <div class="product-info">
+                <h2>Protein Shaker</h2>
+                <p>Our shaker helps to keep you hydrated throughout the day, 
+                    and the blending ball has been designed to give you a smooth 
+                    shake whatever supplement you’re mixing. It’s an essential for 
+                    your gym bag to stay fuelled, wherever you are.</p>
+                <p>$4.99</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="img/jumpinrope.jpg" alt="Creatine">
+            <div class="product-info">
+                <h2>Jumping Rope</h2>
+                <p>The Jump Rope inSPORTline Jumpkamu is a workout accessory perfect 
+                    for improving your fitness. It is extremely fast, which
+                         makes it perfect for endurance athletes, boxers and other athletes.</p>
+                <p>$12.89</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="img/liftingbelt.jpg" alt="Preworkout">
+            <div class="product-info">
+                <h2>Weight Lifting Belt</h2>
+                <p>A high-quality lifting belt is an essential accessory for many strength
+                     athletes. Our popular 10mm Lever Belt is designed to give you support
+                      and stability during your lifts without feeling restrictive and 
+                      uncomfortable. </p>
+                <p>$79.79</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="img/liftingstraps.jpg" alt="Bcaa">
+            <div class="product-info">
+                <h2>Lifting Straps</h2>
+                <p> Our 'BEAST' Lifting Straps help you lift more when it matters. Our straps
+                    help strengthen your grip on exercises such as deadlifts, rows, pull ups
+                    and shrugs allowing you to lift more weight which means more you can build
+                    more muscle and strength.</p>
+                <p>$8.39</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="img/pullupbar.png" alt="Omega3">
+            <div class="product-info">
+                <h2>Multi-Grip Pull-Up Bar</h2>
+                <p>Perfect your pull-ups and strengthen your entire upper body in the comfort
+                     of your own home with the ProsourceFit Multi-Grip Pull-Up Bar. The heavy
+                      duty bar slips easily onto any standard doorframe so you can get in a 
+                      set of pull-ups, chin-ups, or leg raises for a great workout anytime.</p>
+                <p>$34.99</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="img/liquidchalk.jpg" alt="Multivitamin">
+            <div class="product-info">
+                <h2>Liquid Chalk</h2>
+                <p>Our Liquid Chalk can be used in all of your training sessions to reduce
+                     sweating and improve grip strength. It can be applied to the hands or
+                      feet to suit a range of exercises, whether that’s climbing, lifting,
+                       and gymnastics.</p>
+                <p>$3.99</p>
+            </div>
+        </div>
+        </div>
+        
+        <form id="order">
+            <div class="orderinfo">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+    
+            <div class="orderinfo">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+            </div>
+
+            <div class="orderinfo">
+                <label for="address">Your Address:</label>
+                <input type="text" id="address" name="address" placeholder="Your address" required>
+            </div>
+
+            <div class="orderproducts">
+                <label for="item">Select Item:</label>
+                <select id="item" name="item" required>
+                    <option value="proteinshaker">Protein Shaker</option>
+                    <option value="jumpingrope">Jumping Rope</option>
+                    <option value="weightliftingbelt">Weight Lifting Belt</option>
+                    <option value="liftingstraps">Lifting Straps</option>
+                    <option value="pullupbar">Multi-Grip Pull-Up Bar</option>
+                    <option value="liquidchalk">Liquid Chalk</option>
+                </select>
+            </div>
+    
+            <button class="submit-button" type="submit">Place Order</button>
+        </form>
+
+
+        <div class="footer">
+            <p>&copy; 2023 FlexFuel Store. All rights reserved.</p>
+        </div>
+
+
+
+        <script src="jquery.js"></script>
+
+</body>
+</html>
